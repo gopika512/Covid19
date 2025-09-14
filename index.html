@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 Impact Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Covid-19 Impact Tracker 🦠</h1>
+            <p>Visualizing the global spread of the coronavirus pandemic over time.</p>
+        </header>
+
+        <main>
+            <section class="stats-cards">
+                <div class="card confirmed">
+                    <h2>Total Confirmed</h2>
+                    <p id="total-confirmed">Loading...</p>
+                </div>
+                <div class="card deaths">
+                    <h2>Total Deaths</h2>
+                    <p id="total-deaths">Loading...</p>
+                </div>
+                <div class="card recovered">
+                    <h2>Total Recovered</h2>
+                    <p id="total-recovered">Loading...</p>
+                </div>
+            </section>
+
+            <section class="chart-container">
+                <h2>Global Pandemic Trends</h2>
+                <canvas id="covidChart"></canvas>
+            </section>
+        </main>
+
+        <footer>
+            <p>Data sourced from <a href="https://disease.sh/" target="_blank">disease.sh API</a>. Developed by GOPI.</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
